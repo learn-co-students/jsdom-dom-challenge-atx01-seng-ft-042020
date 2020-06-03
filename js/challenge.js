@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
             plus.disabled = false;
             minus.disabled = false;
             likeButton.disabled = false;
+            pause.innerText = 'pause';
             paused = false;
         } else {
             clearInterval(counting);
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             plus.disabled = true;
             minus.disabled = true;
             likeButton.disabled = true;
+            pause.innerText = 'resume';
             paused = true;
         }
     }
